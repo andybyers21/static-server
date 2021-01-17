@@ -58,8 +58,4 @@ func serveTemplates(w http.ResponseWriter, r *http.Request) {
 		log.Println(err.Error())
 		http.Error(w, http.StatusText(500), 500)
 	}
-
-	// Bundle the requested template and layout into a template set and render a named template in the set.
-	// tmpl, _ := template.ParseFiles(lp, fp)
-	// tmpl.ExecuteTemplate(w, "layout", nil)
 }
